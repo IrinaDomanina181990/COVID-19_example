@@ -8,3 +8,9 @@ select(Covid.Data, SEX)
 count(Covid.Data, SEX)
 table(Covid.Data$SEX) / length(Covid.Data$SEX)
 colSums(is.na(Covid.Data)) 
+filtered_Covid.Data = Covid.Data[Covid.Data['Age'] > 30]
+select(Covid.Data, AGE)
+filtered_Covid.Data = Covid.Data[Covid.Data['AGE'] > 90]
+filtered_Covid.Data = Covid.Data[Covid.Data['AGE'] > 80]
+rslt_Covid.Data = ('Percentage > 80')
+rslt_Covid.Data = Covid.Data.query('Percentage > 80')
