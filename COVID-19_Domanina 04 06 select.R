@@ -14,3 +14,6 @@ filtered_Covid.Data = Covid.Data[Covid.Data['AGE'] > 90]
 filtered_Covid.Data = Covid.Data[Covid.Data['AGE'] > 80]
 rslt_Covid.Data = ('Percentage > 80')
 rslt_Covid.Data = Covid.Data.query('Percentage > 80')
+slice(Covid.Data 1:6)
+slice(Covid.Data, c(2, 5, 6))
+slice(Covid.Data, c(1,2,3,4,5,6))
