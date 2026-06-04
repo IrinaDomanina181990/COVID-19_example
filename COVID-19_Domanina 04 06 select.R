@@ -17,3 +17,16 @@ rslt_Covid.Data = Covid.Data.query('Percentage > 80')
 slice(Covid.Data 1:6)
 slice(Covid.Data, c(2, 5, 6))
 slice(Covid.Data, c(1,2,3,4,5,6))
+write.csv(c(1,2,3,4,5,6))
+write.csv(Covid.Data, c(1,2,3,4,5,6))
+# Создаём фрейм данных
+Covid.Data2  <- Covid.Data(
+  Patient_Type  = c("1", "2"),
+  Age = c(0, 35, 75, 80),
+  Голосование = c(FALSE, TRUE)
+)
+
+# Записываем фрейм данных в CSV-файл
+write.csv(Covid.Data2 , "Covid.Data2 .csv", row.names = FALSE)
+library(readr)
+write_csv(Covid.Data, c(AGE,DIABETES,TOBACCO))
