@@ -55,4 +55,4 @@ tibble
 Covid.Data                                  
 names(Covid.Data) <- tolower(names(Covid.Data)
 Covid.Data %>% select(!USMER:COPD)
-                             
+Covid.Data %>% select(!USMER:INMSUPR)                             
