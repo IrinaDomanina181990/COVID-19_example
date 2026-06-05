@@ -50,3 +50,9 @@ read_csv("C:/Users/Bastet/Desktop/Covid Data.csv")
 is_tibble(Covid.Data)
 my_Covid.Data <- Covid.Data
 library(dplyr)
+Covid.Data <- Covid.Data %>% select(-c("USMER")
+tibble                                    
+Covid.Data                                  
+names(Covid.Data) <- tolower(names(Covid.Data)
+Covid.Data %>% select(!USMER:COPD)
+                             
