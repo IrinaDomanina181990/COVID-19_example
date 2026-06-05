@@ -30,3 +30,5 @@ Covid.Data2  <- Covid.Data(
 write.csv(Covid.Data2 , "Covid.Data2 .csv", row.names = FALSE)
 library(readr)
 write_csv(Covid.Data, c(AGE,DIABETES,TOBACCO))
+library(stringr)
+colnames(Covid.Data) <- str_to_lower(colnames(Covid.Data))
